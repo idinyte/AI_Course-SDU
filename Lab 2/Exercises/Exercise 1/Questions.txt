@@ -1,0 +1,31 @@
+1. Successor nodes are inserted at front of the fringe (successor list) as a node is expanded. Is this a breadth (FIFO) or depth-first search (LIFO)?
+
+depth-first search (LIFO)
+
+2. For goal J, give the fringe (successor list) after expanding each node
+
+fringe: [State: B - Depth: 1, State: C - Depth: 1]
+fringe: [State: D - Depth: 2, State: E - Depth: 2, State: C - Depth: 1]
+fringe: [State: E - Depth: 2, State: C - Depth: 1]
+fringe: [State: C - Depth: 1]
+fringe: [State: F - Depth: 2, State: G - Depth: 2]
+fringe: [State: G - Depth: 2]
+fringe: [State: H - Depth: 3, State: I - Depth: 3, State: J - Depth: 3]
+fringe: [State: I - Depth: 3, State: J - Depth: 3]
+fringe: [State: J - Depth: 3]
+
+3. What is the effect of inserting successor nodes at the end of the fringe as a node is expanded? A depth or breadth-first search?
+
+It searches all nodes in the same depth first. Breadth-first search
+
+4. For goal J, give the fringe (successor list) after expanding each node
+
+fringe: [State: B - Depth: 1, State: C - Depth: 1]
+fringe: [State: C - Depth: 1, State: D - Depth: 2, State: E - Depth: 2]
+fringe: [State: D - Depth: 2, State: E - Depth: 2, State: F - Depth: 2, State: G - Depth: 2]
+fringe: [State: E - Depth: 2, State: F - Depth: 2, State: G - Depth: 2]
+fringe: [State: F - Depth: 2, State: G - Depth: 2]
+fringe: [State: G - Depth: 2]
+fringe: [State: H - Depth: 3, State: I - Depth: 3, State: J - Depth: 3]
+fringe: [State: I - Depth: 3, State: J - Depth: 3]
+fringe: [State: J - Depth: 3]
