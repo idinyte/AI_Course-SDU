@@ -1,0 +1,18 @@
+1.What is the branching factor at depth 0? At depth 1?
+branching factor = 9 at depth 0
+branching factor = 8 at depth 1
+
+2.What is the maximal depth?
+maximal depth = 9
+
+3.Will a MIN move attempt to minimize or maximize the utility?
+minimize
+
+4.Are states after a terminal state explored?
+no
+
+5.Are all possible states explored to a terminal state?
+yes
+
+6.Is this a depth-first or breadth-first search? How do you know? (see Python code)
+depth first. The algorithm finds deepest value and then goes up
