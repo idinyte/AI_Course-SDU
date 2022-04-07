@@ -1,0 +1,57 @@
+Min max algorithm
+
+Pile: 20
+Min: 19, 1
+Max: 14, 5, 1
+Min: 13, 5, 1, 1
+Max: 11, 5, 2, 1, 1
+Min: 10, 5, 2, 1, 1, 1
+Max: 8, 5, 2, 2, 1, 1, 1
+Min: 7, 5, 2, 2, 1, 1, 1, 1
+Max: 5, 5, 2, 2, 2, 1, 1, 1, 1
+Min: 5, 4, 2, 2, 2, 1, 1, 1, 1, 1
+Max: 4, 4, 2, 2, 2, 1, 1, 1, 1, 1, 1
+Min: 4, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1
+Max: 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1
+Min: 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1
+Max: 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+Min lost
+Execution speed 0:12:10.573501
+
+Pile: 8
+Min: 7, 1
+Max: 6, 1, 1
+Min: 4, 2, 1, 1
+Max: 3, 2, 1, 1, 1
+Min: 2, 2, 1, 1, 1, 1
+Max lost
+Execution speed 0:00:00.000720
+
+Min max with alpha beta pruning
+
+Pile: 20
+Min: 18, 2
+Max: 16, 2, 2
+Min: 14, 2, 2, 2
+Max: 12, 2, 2, 2, 2
+Min: 10, 2, 2, 2, 2, 2
+Max: 8, 2, 2, 2, 2, 2, 2
+Min: 6, 2, 2, 2, 2, 2, 2, 2
+Max: 4, 2, 2, 2, 2, 2, 2, 2, 2
+Min: 3, 2, 2, 2, 2, 2, 2, 2, 2, 1
+Max: 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1
+Min lost
+Execution speed 0:00:00.005622
+
+Pile: 8
+Min: 6, 2
+Max: 4, 2, 2
+Min: 3, 2, 2, 1
+Max: 2, 2, 2, 1, 1
+Min lost
+Execution speed 0:00:00.000340
+
+Conclusion:
+Min has lost in both occasions, alpha beta pruning algorithm made less moves and was a lot faster. Alpha beta pruning saved 12 minutes 10 seconds and 567.879 ms in case of pile being size 20.
+In case of pile size 8, min max algorithm managed to win against max, but alpha pruning still lost. 
+
